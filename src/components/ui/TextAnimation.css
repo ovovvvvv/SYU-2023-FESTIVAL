@@ -1,0 +1,16 @@
+@keyframes textFlow {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.text-flow {
+  animation: textFlow 10s linear infinite;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+}

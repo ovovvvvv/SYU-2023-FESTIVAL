@@ -1,0 +1,10 @@
+@keyframes rotate_image {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.rotation {
+  animation: rotate_image 5s linear infinite;
+  transform-origin: 50% 50%;
+}

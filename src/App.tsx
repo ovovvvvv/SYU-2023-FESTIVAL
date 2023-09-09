@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Layout from './components/ui/Layout';
 import IntroPage from './pages/IntroPage';
 
 function App() {
