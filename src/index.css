@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Firefox */
+/* 아래 속성은 Firefox 브라우저용입니다. */
+/* 스크롤바를 숨기려면 'display: none'을 사용합니다. */
+/* background 속성은 스크롤바 트랙의 색상을 설정합니다. */
+/* 아래 코드는 브라우저마다 다르게 적용됩니다. */
+
+/* 스크롤바 트랙의 색상을 투명하게 만듭니다. */
+/* 스크롤바 자체는 스크롤 가능한 콘텐츠를 나타내므로 숨겨지지 않습니다. */
+/* 스크롤바를 숨기려면 JavaScript와 함께 사용해야 할 수 있습니다. */
+* {
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+
+/* Chrome, Edge, Safari */
+/* 아래 속성은 Chrome, Edge, Safari 브라우저용입니다. */
+/* 스크롤바를 숨기려면 'scrollbar-width: none'을 사용합니다. */
+/* 스크롤바의 색상을 투명하게 만듭니다. */
+/* 스크롤바 자체는 스크롤 가능한 콘텐츠를 나타내므로 숨겨지지 않습니다. */
+/* 스크롤바를 숨기려면 JavaScript와 함께 사용해야 할 수 있습니다. */
+*::-webkit-scrollbar {
+  width: 0px; /* Chrome, Safari, Edge 브라우저에서 스크롤바의 너비를 조절합니다. */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent; /* 스크롤바 색상을 투명하게 설정합니다. */
+}

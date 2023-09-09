@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import './App.css';
+import Layout from './components/ui/Layout';
+import IntroPage from './pages/IntroPage';
 
 function App() {
   return (
-    <>
-      <h1 className="text-slate-800 mx-10">삼육대학교 2023 축제 페이지</h1>
-    </>
+    <div className="flex justify-center w-screen h-screen">
+      <IntroPage />
+    </div>
   );
 }
 
