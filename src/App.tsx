@@ -1,10 +1,15 @@
-import { useState } from 'react';
-import IntroPage from './pages/IntroPage';
+import { Route, Routes } from 'react-router-dom';
+import MainPage from './pages/MainPage';
+import FooterAnimation from './components/ui/FooterAnimation';
 
 function App() {
   return (
-    <div className="flex justify-center w-screen h-screen">
-      <IntroPage />
+    <div className="flex justify-center">
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+      </Routes>
+
+      <FooterAnimation />
     </div>
   );
 }

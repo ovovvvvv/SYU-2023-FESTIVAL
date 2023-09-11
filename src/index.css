@@ -5,7 +5,6 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
-  overflow: hidden;
 }
 
 *::-webkit-scrollbar {
