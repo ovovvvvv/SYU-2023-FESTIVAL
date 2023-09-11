@@ -1,9 +1,9 @@
-import ScrollHeader from '../components/ui/ScrollHeader';
+// import ScrollHeader from '../components/ui/ScrollHeader';
 
 const OutlinePage = () => {
   return (
     <div className=" bg-[#E7E7E7]">
-      <ScrollHeader />
+      {/* <ScrollHeader /> */}
       <div className="flex flex-col items-center justify-center text-center my-10">
         <div className="w-[340px] h-[111px] rounded-b-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)] ">
           <p>

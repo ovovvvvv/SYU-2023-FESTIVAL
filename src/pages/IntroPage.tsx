@@ -5,7 +5,7 @@ import FlowerAnimation from '../components/ui/FlowerAnimation';
 const IntroPage = () => {
   return (
     <div>
-      <div className="bg-1ptitle3 flex flex-col justify-center overflow-hidden">
+      <div className="bg-1ptitlever2 flex flex-col justify-center overflow-hidden">
         {/* 상, 하단 애니메이션 텍스트 */}
         <HeaderAnimation />
 

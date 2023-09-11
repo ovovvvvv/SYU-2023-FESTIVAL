@@ -1,4 +1,3 @@
-import React from 'react';
 import IntroPage from './IntroPage';
 import OutlinePage from './OutlinePage';
 

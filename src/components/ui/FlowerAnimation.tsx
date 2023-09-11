@@ -1,4 +1,3 @@
-import React from 'react';
 import './FlowerAnimation.css';
 
 const FlowerAnimation = () => {
@@ -7,12 +6,12 @@ const FlowerAnimation = () => {
       <div>
         <img
           src="images/leftflower.png"
-          width={80}
+          width={95}
           className="rotation absolute left-[2%] top-[15%]"
         />
         <img
           src="images/rightflower.png"
-          width={100}
+          width={110}
           className="rotation absolute right-2 bottom-[27%]"
         />
       </div>

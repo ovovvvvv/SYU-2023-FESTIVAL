@@ -1,9 +1,9 @@
 
 {/* 배경 이미지 css */}
-.bg-1ptitle3 {
+.bg-1ptitlever2 {
   /* 이미지 배경 스타일 유지 */
   background-color: black;
-  background-image: url('/images/1ptitle3.png');
+  background-image: url('/images/1ptitlever2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,11 +13,11 @@
   z-index: -1;
 }
 
-@media (max-width: 375px) {
-  .bg-1ptitle3 {
+/* @media (max-width: 375px) {
+  .bg-1ptitlever2 {
     background-color: black;
-    background-image: url('/images/1ptitle3.png');
-    background-size: contain;
+    background-image: url('/images/1ptitlever2.png');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -26,4 +26,4 @@
     z-index: -1;
   }
 }
-
+ */
