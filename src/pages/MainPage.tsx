@@ -3,7 +3,7 @@ import OutlinePage from './OutlinePage';
 
 const MainPage = () => {
   return (
-    <div className="flex flex-col justify-center max-w-[500px]">
+    <div className="flex flex-col justify-center w-full">
       <IntroPage />
       <OutlinePage />
     </div>
