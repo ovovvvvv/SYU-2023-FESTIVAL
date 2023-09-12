@@ -2,15 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+body {
+  background-color: black;
 }
 
-*::-webkit-scrollbar {
-  width: 0px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: transparent;
+::-webkit-scrollbar {
+  display: none;
 }

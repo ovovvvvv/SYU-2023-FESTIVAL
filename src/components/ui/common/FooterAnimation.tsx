@@ -1,4 +1,4 @@
-import './TextAnimation.css';
+import '../Intro/TextAnimation.css';
 
 const FooterAnimation = () => {
   return (
