@@ -6,8 +6,13 @@ const OutlinePage = () => {
       <ScrollHeader />
       <div className="flex flex-col items-center mt-14 mb-20 justify-center text-center">
         <div className="flex flex-col justify-center w-[340px] h-[111px] rounded-b-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)] ">
-          <p>
-            SAHMYOOK UNIV.FESTIVAL <br />
+          <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+            SAHMYOOK UNIV.FESTIVAL
+          </p>
+          <p
+            className="text-[20px]"
+            style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}
+          >
             &lt;AGAIN, YOUTH!&gt;
           </p>
         </div>
