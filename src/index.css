@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('src/fonts/Pretendard-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url('/fonts/Pretendard-SemiBold.ttf') format('ttf');
+}
+
 body {
   background-color: black;
 }
 
-::-webkit-scrollbar {
-  display: none;
+h1 {
+  font-family: 'Audiowide';
 }

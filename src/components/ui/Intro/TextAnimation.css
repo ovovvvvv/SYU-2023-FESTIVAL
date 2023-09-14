@@ -10,6 +10,5 @@
 .text-flow {
   animation: textFlow 10s linear infinite;
   position: absolute;
-  overflow-x: hidden;
   white-space: nowrap;
 }
