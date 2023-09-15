@@ -2,7 +2,7 @@ import { forwardRef, ForwardedRef } from 'react';
 
 const OutlinePage = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div ref={ref} className=" bg-[#E7E7E7] h-full">
+    <div ref={ref} className=" bg-[#E7E7E7] h-screen h-full">
       <div className="flex flex-col items-center mt-14 mb-20 justify-center text-center">
         <div className="flex flex-col justify-center w-[340px] h-[111px] rounded-b-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)] ">
           <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
@@ -16,21 +16,24 @@ const OutlinePage = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
           </p>
         </div>
         <div className="flex flex-col justify-center w-[340px] h-[278px] rounded-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)]">
-          <p>FESTIVAL PURPOSE</p>
+          <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+            FESTIVAL PURPOSE
+          </p>
           <br />
           <p className="text-[11px]">
             비대면에서 대면으로 넘어가는 대학문화 도약의 시기에
             <br />
-            학생 주도참여형 축제를 진행. 대학문화 창달 <br />
+            <strong>학생 주도참여형 축제</strong>를 진행. 대학문화 창달 <br />
             <br />
             기존의 보수적인 축제의 형상을 탈피하고
             <br />
-            지역사회와 함께 공존할수 있는 축제 <br />
+            <strong>지역사회와 함께 공존할수 있는 축제</strong> <br />
             <br />
             학업에 지친 학생들을 응원하는 축제의 장 마련
             <br />
             <br />
-            다음 세대의 주역인 삼육대학 청년들에게 취.창업에 대한
+            <strong>다음 세대의 주역인 삼육대학 청년들</strong>에게 취.창업에
+            대한
             <br />
             다양한 체험활동과 정보를 제공하여 미래를 향해 도전하는 기회 창출
             <br />
@@ -39,9 +42,14 @@ const OutlinePage = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
           </p>
         </div>
         <div className="flex flex-col justify-center w-[340px] h-[292px] rounded-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)]">
-          <p>FESTIVAL HISTORY</p>
+          <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+            FESTIVAL HISTORY
+          </p>
           <br />
-          <p className="text-[11px]">
+          <p
+            className="text-[11px]
+               style={{ fontFamily: 'Pretendard-Regular' }}"
+          >
             삼육대학교는 1906년 개교 후, 1961년에 학생 자치기구를
             <br />
             조직하여 대학문화 창달의 이상을 기초로 삼아 2007년
@@ -61,7 +69,10 @@ const OutlinePage = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
             삼육대학교 학생들의 화합과 문화형성의 장이라는 의미가 있습니다.
           </p>
           <br />
-          <p className="text-[8px]">
+          <p
+            className="text-[8px]"
+            style={{ fontFamily: 'Pretendard-Regular' }}
+          >
             * 2022년 기준 천보축전 참여 재학생 약5000명, 2023년은
             <br />
             지역사회와 공존하는 방향으로 진행하기에 그 이상이 될 것으로 예상함.
