@@ -1,15 +1,19 @@
+import { useRef } from 'react';
 import IntroPage from './IntroPage';
 import OutlinePage from './OutlinePage';
 import TimeTablePage from './TimeTablePage';
 import ScrollHeader from '../components/ui/common/ScrollHeader';
 
 const MainPage = () => {
+  const outlineRef = useRef<HTMLDivElement | null>(null);
+  const timetableRef = useRef<HTMLDivElement | null>(null);
+
   return (
-    <div className="flex flex-col justify-center w-full">
+    <div className="flex flex-col justify-center">
       <IntroPage />
-      <ScrollHeader />
-      <OutlinePage />
-      <TimeTablePage />
+      <ScrollHeader outlineRef={outlineRef} timetableRef={timetableRef} />
+      <OutlinePage ref={outlineRef} />
+      <TimeTablePage ref={timetableRef} />
     </div>
   );
 };

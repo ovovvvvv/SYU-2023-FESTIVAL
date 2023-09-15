@@ -1,10 +1,10 @@
-import ScrollHeader from '../components/ui/common/ScrollHeader';
+import { forwardRef, ForwardedRef } from 'react';
 import TimeTableBox from '../components/ui/timeline/TimeTableBox';
 import './TimeTablePage.css';
 
-const TimeTablePage = () => {
+const TimeTablePage = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div className="bg-timetable h-screen">
+    <div ref={ref} className="bg-timetable h-screen">
       <div className="flex flex-col justify-center items-center ">
         <div
           className="text-[#fff] border-2 p-2 my-5"
@@ -36,10 +36,9 @@ const TimeTablePage = () => {
           <TimeTableBox time="21:30 - 21:55" activity="EDM 공연 및 퇴장 안내" />
           <TimeTableBox time="21:55 - 22:00" activity="마무리" />
         </div>
-        sS sS
       </div>
     </div>
   );
-};
+});
 
 export default TimeTablePage;
