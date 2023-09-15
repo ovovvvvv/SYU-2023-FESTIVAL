@@ -28,7 +28,7 @@ const ScrollHeader = ({ outlineRef, timetableRef }: ScrollHeaderProps) => {
     index: number,
     ref: RefObject<HTMLDivElement | null>,
   ) => {
-    setActiveMenuIndex(index); // 클릭한 메뉴 아이템의 인덱스를 활성화 상태로 설정
+    setActiveMenuIndex(index); // 클릭한 메뉴의 인덱스를 활성화 상태로 설정!!
     handleMoveTo(ref);
   };
 

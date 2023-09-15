@@ -14,10 +14,26 @@
   font-style: normal;
 }
 
-body {
-  background-color: black;
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff')
+    format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
 h1 {
   font-family: 'Audiowide', cursive;
+}
+
+/* 작은 화면(아이폰 SE 등)에서 h-full로 변경 */
+@media (max-height: 740px) {
+  .h-full-screen {
+    height: 100%;
+  }
+}
+
+/* props로 데이터 전달시 줄 넘기기 */
+.timeline-description {
+  white-space: pre-line;
 }

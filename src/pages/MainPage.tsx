@@ -10,7 +10,7 @@ const MainPage = () => {
   const timetableRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <div className="flex flex-col justify-center">
+    <div className="">
       <IntroPage />
       <ScrollHeader outlineRef={outlineRef} timetableRef={timetableRef} />
       <OutlinePage ref={outlineRef} />

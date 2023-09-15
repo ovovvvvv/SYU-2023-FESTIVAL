@@ -1,9 +1,12 @@
 import { forwardRef, ForwardedRef } from 'react';
 
-const OutlinePage = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
+const OutlinePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div ref={ref} className=" bg-[#E7E7E7] h-screen h-full">
-      <div className="flex flex-col items-center mt-14 mb-20 justify-center text-center">
+    <div
+      ref={ref}
+      className="h-full-screen flex flex-col justify-center bg-[#E7E7E7] h-screen "
+    >
+      <div className="flex flex-col items-center justify-center text-center">
         <div className="flex flex-col justify-center w-[340px] h-[111px] rounded-b-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)] ">
           <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
             SAHMYOOK UNIV.FESTIVAL
@@ -41,7 +44,7 @@ const OutlinePage = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
             학생들이 직접 기획하고 주도하는 학생 주도형 축제
           </p>
         </div>
-        <div className="flex flex-col justify-center w-[340px] h-[292px] rounded-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)]">
+        <div className="outlineBox2 flex flex-col justify-center w-[340px] h-[292px] rounded-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)]">
           <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
             FESTIVAL HISTORY
           </p>

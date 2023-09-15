@@ -4,7 +4,7 @@ import FooterAnimation from './components/ui/common/FooterAnimation';
 
 function App() {
   return (
-    <div className="mx-auto max-w-[500px]">
+    <div className=" mx-auto max-w-[500px]">
       <Routes>
         <Route path="/" element={<MainPage />} />
       </Routes>
