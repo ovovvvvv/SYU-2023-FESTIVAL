@@ -24,7 +24,7 @@ const LineupPage = () => {
   ];
 
   return (
-    <div className="h-full-screen flex flex-col justify-center bg-black h-screen ">
+    <div className="flex flex-col justify-center bg-black">
       <h1
         className="text-[#fff] text-[25px] flex justify-center my-6 underline underline-offset-8
         decoration-[#0026ff]"
