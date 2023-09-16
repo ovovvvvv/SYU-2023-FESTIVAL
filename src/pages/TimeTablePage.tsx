@@ -4,10 +4,7 @@ import './TimeTablePage.css';
 
 const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div
-      ref={ref}
-      className="bg-timetable flex flex-col justify-center h-full-screen h-full"
-    >
+    <div ref={ref} className="bg-timetable flex flex-col justify-center">
       <div className="flex flex-col justify-center items-center ">
         <div
           className="text-[#fff] border-2 p-2 my-8"
@@ -17,13 +14,13 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
         </div>
 
         <div
-          className=" flex items-center justify-center text-sm w-[342px] h-[38px] rounded-t-lg bg-black text-[#fff] text-semibold"
+          className="flex items-center justify-center text-sm w-[342px] h-[38px] rounded-t-lg bg-black text-[#fff] text-semibold"
           style={{ fontFamily: 'Pretendard-Semibold' }}
         >
           부스 시간표
         </div>
         <div
-          className=" w-[340px] h-[226px] flex flex-col justify-center bg-[#FAFAFA] rounded-b-lg"
+          className="w-[340px] py-4 flex flex-col justify-center bg-[#FAFAFA] rounded-b-lg"
           style={{ fontFamily: 'Pretendard-Semibold' }}
         >
           <TimeTableBox time="09:00 - 17:00" activity="부스활동 진행" />
@@ -39,7 +36,7 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
             행사 진행 순서
           </div>
           <div
-            className="w-[340px] h-[430px] flex flex-col justify-center bg-[#FAFAFA] rounded-b-lg"
+            className="w-[340px] py-4 flex flex-col justify-center bg-[#FAFAFA] rounded-b-lg"
             style={{ fontFamily: 'Pretendard-Semibold' }}
           >
             <TimeTableBox time="16:30 - 17:30" activity="개회식 + 레크레이션" />
