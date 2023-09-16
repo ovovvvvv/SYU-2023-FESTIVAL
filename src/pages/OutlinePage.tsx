@@ -4,7 +4,7 @@ const OutlinePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <div
       ref={ref}
-      className="h-full-screen flex flex-col justify-center bg-[#E7E7E7] h-screen "
+      className="flex flex-col justify-center bg-[#E7E7E7] h-screen"
     >
       <div className="flex flex-col items-center justify-center text-center">
         <div className="flex flex-col justify-center w-[340px] h-[111px] rounded-b-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)] ">

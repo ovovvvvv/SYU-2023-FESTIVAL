@@ -10,7 +10,7 @@ const MainPage = () => {
   const timetableRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <div className="">
+    <div>
       <IntroPage />
       <ScrollHeader outlineRef={outlineRef} timetableRef={timetableRef} />
       <OutlinePage ref={outlineRef} />
