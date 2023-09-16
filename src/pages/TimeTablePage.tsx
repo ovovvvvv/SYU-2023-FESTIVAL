@@ -6,7 +6,7 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <div
       ref={ref}
-      className="bg-timetable flex flex-col justify-center h-full-screen h-screen"
+      className="bg-timetable flex flex-col justify-center h-full-screen h-full"
     >
       <div className="flex flex-col justify-center items-center ">
         <div

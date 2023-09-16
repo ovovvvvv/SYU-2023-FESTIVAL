@@ -10,12 +10,3 @@
   position: relative;
   z-index: -1;
   }
-  
-
-  @media (max-width: 280px) {
-    .timetableBox {
-      width: 250px;
-      height: 80px;
-    }
-  }
-  

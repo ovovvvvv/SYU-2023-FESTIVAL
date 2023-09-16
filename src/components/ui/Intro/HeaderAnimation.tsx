@@ -7,7 +7,7 @@ const HeaderAnimation = () => {
       <h1 className="text-flow absolute top-1 traking-wide text-4xl text-white whitespace-nowrap">
         SAHMYOOK UNIVERSITY
       </h1>
-      <h1 className="text-flow absolute bottom-9 tracking-wide text-4xl text-white whitespace-nowrap">
+      <h1 className="text-flow absolute bottom-[20px] tracking-wide text-4xl text-white whitespace-nowrap">
         SYU FESTIVAL
       </h1>
     </div>
