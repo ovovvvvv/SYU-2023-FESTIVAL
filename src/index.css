@@ -22,15 +22,12 @@
   font-style: normal;
 }
 
-h1 {
-  font-family: 'Audiowide', cursive;
+body {
+  background: black;
 }
 
-/* 작은 화면(아이폰 SE 등)에서 h-full로 변경 */
-@media (max-height: 740px) {
-  .h-full-screen {
-    height: 100%;
-  }
+h1 {
+  font-family: 'Audiowide', cursive;
 }
 
 /* props로 데이터 전달시 줄 넘기기 */
