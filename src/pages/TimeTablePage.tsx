@@ -1,17 +1,37 @@
 import { forwardRef, ForwardedRef } from 'react';
 import TimeTableBox from '../components/ui/timeline/TimeTableBox';
 import './TimeTablePage.css';
+import Googlemap from '../components/ui/timeline/GooglemapApi';
 
 const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
+  const center1 = {
+    lat: 37.643126,
+    lng: 127.106649,
+  };
+  const center2 = {
+    lat: 37.641534,
+    lng: 127.107658,
+  };
+
+  const zoom1 = {
+    minzoom: 12,
+    maxzoom: 20,
+  };
+
+  const zoom2 = {
+    minzoom: 12,
+    maxzoom: 20,
+  };
+
   return (
     <div
       ref={ref}
-      className="bg-timetable flex flex-col justify-center h-full-screen h-screen"
+      className="bg-timetable flex flex-col justify-center text-center"
     >
       <div className="flex flex-col justify-center items-center ">
         <div
           className="text-[#fff] border-2 p-2 my-8"
-          style={{ borderRadius: '50%', fontFamily: 'Montserrat, sans-serif' }}
+          style={{ borderRadius: '29px', fontFamily: 'Montserrat, sans-serif' }}
         >
           TIME-TABLE
         </div>
@@ -23,13 +43,25 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
           부스 시간표
         </div>
         <div
-          className=" w-[340px] h-[226px] flex flex-col justify-center bg-[#FAFAFA] rounded-b-lg"
+          className=" w-[340px] py-4 flex flex-col justify-center bg-[#FAFAFA] rounded-b-lg"
           style={{ fontFamily: 'Pretendard-Semibold' }}
         >
           <TimeTableBox time="09:00 - 17:00" activity="부스활동 진행" />
           <TimeTableBox time="17:00 - 18:00" activity="핫 타임(할인) 진행" />
           <TimeTableBox time="18:00 - 21:00" activity="야간 운영 전환" />
           <TimeTableBox time="21:00 - 22:00" activity="부스 마무리 및 정리" />
+          <Googlemap
+            lat={center1.lat}
+            lng={center1.lng}
+            minzoom={zoom1.minzoom}
+            maxzoom={zoom2.maxzoom}
+          />
+          <p
+            className="text-[15px]"
+            style={{ fontFamily: 'Pretendard-Semibold' }}
+          >
+            모든 부스는 도서관, 솔로몬 광장 앞에서 진행됩니다.
+          </p>
         </div>
         <div className="my-5">
           <div
@@ -39,7 +71,7 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
             행사 진행 순서
           </div>
           <div
-            className="w-[340px] h-[430px] flex flex-col justify-center bg-[#FAFAFA] rounded-b-lg"
+            className="w-[340px] py-4 flex flex-col justify-center bg-[#FAFAFA] rounded-b-lg"
             style={{ fontFamily: 'Pretendard-Semibold' }}
           >
             <TimeTableBox time="16:30 - 17:30" activity="개회식 + 레크레이션" />
@@ -55,6 +87,18 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
               activity="EDM 공연 및 퇴장 안내"
             />
             <TimeTableBox time="21:55 - 22:00" activity="마무리" />
+            <Googlemap
+              lat={center2.lat}
+              lng={center2.lng}
+              minzoom={zoom2.minzoom}
+              maxzoom={zoom2.maxzoom}
+            />
+            <p
+              className="text-[15px]"
+              style={{ fontFamily: 'Pretendard-Semibold' }}
+            >
+              행사는 삼육대학교 대운동장에서 진행됩니다.
+            </p>
           </div>
         </div>
       </div>
