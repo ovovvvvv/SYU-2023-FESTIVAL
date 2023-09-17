@@ -1,12 +1,15 @@
 
 {/* 배경 이미지 css */}
 .bg-timetable {
-  /* 이미지 배경 스타일 유지 */
-  background-color: black;
-background-image: url('/images/timetable.png');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-position: relative;
-z-index: -1;
-}
+    /* 이미지 배경 스타일 유지 */
+    background-color: black;
+    background-image: url('/images/timetable.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+  }
+  
+
+  

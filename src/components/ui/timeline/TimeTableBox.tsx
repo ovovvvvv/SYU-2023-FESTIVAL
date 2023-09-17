@@ -7,7 +7,7 @@ const TimeTableBox = ({ time, activity }: TimeTableBoxProps) => {
   return (
     <div>
       <div
-        className="flex flex-row justify-start space-x-5 text-sm
+        className=" flex flex-row justify-start space-x-5 text-sm
       "
       >
         <p className="mx-6  Pretendard-Regular">{time}</p>
