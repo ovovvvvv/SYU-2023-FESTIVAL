@@ -19,7 +19,7 @@ function GoogleMapApi({ lat, lng, minzoom, maxzoom }: GooglemapProps) {
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_API_KEY,
   });
 
-  const [map, setMap] = React.useState(null);
+  const [, setMap] = React.useState(null);
   const center = {
     lat: lat,
     lng: lng,
