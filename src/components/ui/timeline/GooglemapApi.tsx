@@ -37,7 +37,7 @@ function GoogleMapApi({ lat, lng, minzoom, maxzoom }: GooglemapProps) {
     setMap(map);
   }, []);
 
-  const onUnmount = React.useCallback(function callback(map: any) {
+  const onUnmount = React.useCallback(function callback() {
     setMap(null);
   }, []);
 
