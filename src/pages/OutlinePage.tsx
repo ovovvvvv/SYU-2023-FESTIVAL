@@ -1,8 +1,9 @@
 import { forwardRef, ForwardedRef } from 'react';
+import './TimeTablePage.css';
 
 const OutlinePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div ref={ref} className="flex flex-col justify-center bg-[#E7E7E7] py-10">
+    <div ref={ref} className="bg-timetable flex flex-col justify-center  py-10">
       <div className="flex flex-col items-center justify-center text-center">
         <div className="flex flex-col justify-center w-[340px] py-4 rounded-b-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)] ">
           <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
