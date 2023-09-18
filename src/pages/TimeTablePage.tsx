@@ -24,7 +24,7 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   };
 
   return (
-    <div ref={ref} className=" flex flex-col justify-center text-center">
+    <div ref={ref} className=" flex flex-col justify-center text-center pt-10">
       <div className="flex flex-col justify-center items-center ">
         <div
           className="flex flex-col justify-center text-[#fff] text-[27px] border-[1px] border-[#eeeeee] w-[211px] my-8 backdrop-blur-[2px] bg-white/10"
