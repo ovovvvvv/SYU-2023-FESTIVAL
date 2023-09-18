@@ -12,6 +12,7 @@ const MainPage = () => {
   const outlineRef = useRef<HTMLDivElement | null>(null);
   const timetableRef = useRef<HTMLDivElement | null>(null);
   const sponserRef = useRef<HTMLDivElement | null>(null);
+  const boothRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <div>
@@ -20,13 +21,14 @@ const MainPage = () => {
         outlineRef={outlineRef}
         timetableRef={timetableRef}
         sponserRef={sponserRef}
+        boothRef={boothRef}
       />
       <OutlinePage ref={outlineRef} />
       <div className="bg-gradient">
         <TimeTablePage ref={timetableRef} />
         <LineupPage />
         <SponPage ref={sponserRef} />
-        <BoothPage />
+        <BoothPage ref={boothRef} />
       </div>
     </div>
   );

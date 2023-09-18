@@ -1,8 +1,9 @@
 import BoothBox from '../components/ui/booth/BoothBox';
+import { forwardRef, ForwardedRef } from 'react';
 
-const BoothPage = () => {
+const BoothPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div className="flex flex-col items-center mt-10 pb-20">
+    <div ref={ref} className="flex flex-col items-center pb-20">
       <h1
         className="text-[25px] text-white underline underline-offset-8 mb-6"
         style={{ fontFamily: 'Montserrat, sans-serif' }}
@@ -25,6 +26,6 @@ const BoothPage = () => {
       <BoothBox />
     </div>
   );
-};
+});
 
 export default BoothPage;
