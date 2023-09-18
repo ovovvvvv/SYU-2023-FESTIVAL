@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    {
+      "source": "/maps/api",
+      "destination": "https://maps.googleapis.com/maps/api/:path*",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 
 {/* 배경 이미지 css */}
-.bg-1ptitle {
+.bg-titleimg {
   /* 이미지 배경 스타일 유지 */
   background-color: black;
-  background-image: url('/images/1ptitle.png');
+  background-image: url('/images/titleimg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
