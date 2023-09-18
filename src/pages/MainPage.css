@@ -1,0 +1,15 @@
+
+{/* 배경 이미지 css */}
+.bg-gradient {
+    /* 이미지 배경 스타일 유지 */
+    background-color: black;
+    background-image: url('/images/gradient.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+  }
+  
+
+  

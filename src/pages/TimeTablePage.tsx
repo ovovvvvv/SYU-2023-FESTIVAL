@@ -24,26 +24,26 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   };
 
   return (
-    <div
-      ref={ref}
-      className="bg-timetable flex flex-col justify-center text-center"
-    >
+    <div ref={ref} className=" flex flex-col justify-center text-center">
       <div className="flex flex-col justify-center items-center ">
         <div
-          className="text-[#fff] border-2 p-2 my-8"
-          style={{ borderRadius: '29px', fontFamily: 'Montserrat, sans-serif' }}
+          className="flex flex-col justify-center text-[#fff] text-[27px] border-[1px] border-[#eeeeee] w-[211px] my-8 backdrop-blur-[2px] bg-white/10"
+          style={{
+            borderRadius: '34.5px',
+            fontFamily: 'Montserrat, sans-serif',
+          }}
         >
           TIME-TABLE
         </div>
 
         <div
-          className=" flex items-center justify-center text-sm w-[342px] h-[38px] rounded-t-lg bg-black text-[#fff] text-semibold"
+          className=" flex items-center justify-center text-sm w-[330px] h-[38px] rounded-t-lg bg-[#0026ff] text-[#fff] text-semibold"
           style={{ fontFamily: 'Pretendard-Semibold' }}
         >
-          부스 시간표
+          부스 진행 순서
         </div>
         <div
-          className=" w-[340px] py-4 flex flex-col justify-center bg-[#FAFAFA] rounded-b-lg"
+          className=" w-[330px] py-4 flex flex-col justify-center border-solid border-2 border-[#0026ff] bg-[#FAFAFA] rounded-b-lg"
           style={{ fontFamily: 'Pretendard-Semibold' }}
         >
           <TimeTableBox time="09:00 - 17:00" activity="부스활동 진행" />
@@ -65,13 +65,13 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
         </div>
         <div className="my-5">
           <div
-            className="flex items-center justify-center text-sm w-[342px] h-[38px] rounded-t-lg bg-black text-[#fff]"
+            className="flex items-center justify-center text-sm w-[330px] h-[38px] rounded-t-lg bg-[#8f00ff] text-[#fff]"
             style={{ fontFamily: 'Pretendard-Semibold' }}
           >
             행사 진행 순서
           </div>
           <div
-            className="w-[340px] py-4 flex flex-col justify-center bg-[#FAFAFA] rounded-b-lg"
+            className="w-[330px] py-4 flex flex-col justify-center border-solid border-2 border-[#8f00ff] bg-[#FAFAFA] rounded-b-lg"
             style={{ fontFamily: 'Pretendard-Semibold' }}
           >
             <TimeTableBox time="16:30 - 17:30" activity="개회식 + 레크레이션" />

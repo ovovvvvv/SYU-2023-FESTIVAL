@@ -5,7 +5,7 @@ const OutlinePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <div ref={ref} className="bg-timetable flex flex-col justify-center  py-10">
       <div className="flex flex-col items-center justify-center text-center">
-        <div className="flex flex-col justify-center w-[340px] py-4 rounded-b-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)] ">
+        <div className="flex flex-col justify-center w-[330px] py-4 rounded-b-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)] ">
           <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
             SAHMYOOK UNIV.FESTIVAL
           </p>
@@ -16,7 +16,7 @@ const OutlinePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
             &lt;AGAIN, YOUTH!&gt;
           </p>
         </div>
-        <div className="flex flex-col justify-center w-[340px] py-4 rounded-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)]">
+        <div className="flex flex-col justify-center w-[330px] py-4 rounded-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)]">
           <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
             FESTIVAL PURPOSE
           </p>
@@ -42,7 +42,7 @@ const OutlinePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
             학생들이 직접 기획하고 주도하는 학생 주도형 축제
           </p>
         </div>
-        <div className="outlineBox2 flex flex-col justify-center w-[340px] py-4 rounded-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)]">
+        <div className="outlineBox2 flex flex-col justify-center w-[330px] py-4 rounded-[20px] bg-[#FAFAFA] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.10)]">
           <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
             FESTIVAL HISTORY
           </p>

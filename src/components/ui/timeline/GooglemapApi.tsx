@@ -9,8 +9,8 @@ interface GooglemapProps {
 }
 
 const containerStyle = {
-  width: '300px',
-  height: '150Px',
+  width: '290px',
+  height: '140px',
 };
 
 function GoogleMapApi({ lat, lng, minzoom, maxzoom }: GooglemapProps) {
