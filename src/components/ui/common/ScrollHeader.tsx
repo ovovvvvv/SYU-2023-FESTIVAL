@@ -43,9 +43,9 @@ const ScrollHeader = ({
     <div className="sticky top-0 text-center grid grid-cols-3 sm:grid-cols-6 w-full">
       {menuItems.map((menuItem, index) => (
         <div
-          style={{ fontFamily: 'Pretendard-Regular' }}
+          style={{ fontFamily: 'Pretendard-medium' }}
           key={index}
-          className={` border-solid border-[1px] border-[#5A5A5A] text-xs p-2 cursor-pointer sticky top-0 ${
+          className={` border-solid border-[1px] border-[#5A5A5A] text-[11px] p-2 cursor-pointer sticky top-0 ${
             activeMenuIndex === index
               ? 'bg-[#000000] text-[#ffffff]'
               : 'bg-[#E7E7E7] text-black'
