@@ -5,7 +5,18 @@ import FlowerAnimation from '../components/ui/Intro/FlowerAnimation';
 const IntroPage = () => {
   return (
     <div>
-      <div className="bg-title h-screen flex flex-col justify-center overflow-hidden">
+      <div
+        style={{
+          backgroundColor: 'black',
+          backgroundImage: 'url(/images/title.webp)',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          position: 'relative',
+          zIndex: -1,
+        }}
+        className="bg-title h-screen flex flex-col justify-center overflow-hidden"
+      >
         {/* 상, 하단 애니메이션 텍스트 */}
         <HeaderAnimation />
 
