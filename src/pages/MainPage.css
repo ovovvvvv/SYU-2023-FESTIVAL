@@ -3,7 +3,7 @@
 .bg-gradient {
     /* 이미지 배경 스타일 유지 */
     background-color: black;
-    background-image: url('/images/gradient.webp');
+    background-image: url('/images/scrollbg.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

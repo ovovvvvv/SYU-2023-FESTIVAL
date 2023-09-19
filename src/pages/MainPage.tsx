@@ -25,8 +25,8 @@ const MainPage = () => {
         sponserRef={sponserRef}
         boothRef={boothRef}
       />
-      <OutlinePage ref={outlineRef} />
       <div className="bg-gradient">
+        <OutlinePage ref={outlineRef} />
         <TimeTablePage ref={timetableRef} />
         <LineupPage />
         <SponPage ref={sponserRef} />
