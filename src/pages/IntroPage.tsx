@@ -1,4 +1,3 @@
-import './IntroPage.css';
 import HeaderAnimation from '../components/ui/Intro/HeaderAnimation';
 import FlowerAnimation from '../components/ui/Intro/FlowerAnimation';
 
@@ -15,7 +14,7 @@ const IntroPage = () => {
           position: 'relative',
           zIndex: -1,
         }}
-        className="bg-title h-screen flex flex-col justify-center overflow-hidden"
+        className="h-screen flex flex-col justify-center overflow-hidden"
       >
         {/* 상, 하단 애니메이션 텍스트 */}
         <HeaderAnimation />

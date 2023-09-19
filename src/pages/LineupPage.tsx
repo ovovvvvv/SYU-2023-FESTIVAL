@@ -1,4 +1,4 @@
-import Googlemap from '../components/ui/timeline/GooglemapApi';
+import Googlemap from '../components/ui/common/GooglemapApi';
 
 const LineupPage = () => {
   const center2 = {

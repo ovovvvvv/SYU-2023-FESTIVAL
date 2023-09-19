@@ -7,6 +7,8 @@ import LineupPage from './LineupPage';
 import './MainPage.css';
 import SponPage from './SponPage';
 import BoothPage from './BoothPage';
+import VideoPage from './VideoPage';
+import AboutPage from './AboutPage';
 
 const MainPage = () => {
   const outlineRef = useRef<HTMLDivElement | null>(null);
@@ -29,6 +31,8 @@ const MainPage = () => {
         <LineupPage />
         <SponPage ref={sponserRef} />
         <BoothPage ref={boothRef} />
+        <VideoPage />
+        <AboutPage />
       </div>
     </div>
   );

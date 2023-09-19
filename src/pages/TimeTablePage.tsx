@@ -1,7 +1,6 @@
 import { forwardRef, ForwardedRef } from 'react';
 import TimeTableBox from '../components/ui/timeline/TimeTableBox';
-import './TimeTablePage.css';
-import Googlemap from '../components/ui/timeline/GooglemapApi';
+import Googlemap from '../components/ui/common/GooglemapApi';
 
 const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   const center1 = {
