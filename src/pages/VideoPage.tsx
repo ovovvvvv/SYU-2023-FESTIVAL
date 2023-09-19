@@ -1,5 +1,3 @@
-import React from 'react';
-
 const VideoPage = () => {
   return (
     <div className="flex flex-col items-center text-[#fff] py-20">
