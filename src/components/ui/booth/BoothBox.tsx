@@ -1,7 +1,7 @@
 const BoothBox = () => {
   return (
     <div className="flex flex-col justify-center items-center py-7">
-      <img src="/images/boothbox.png" width={330} />
+      <img src="/images/boothbox.webp" width={330} />
       <div
         className="absolute flex flex-row  text-[15px] text-center"
         style={{ fontFamily: 'Pretendard-semibold' }}

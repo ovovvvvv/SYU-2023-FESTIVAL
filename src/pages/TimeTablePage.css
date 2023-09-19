@@ -3,7 +3,7 @@
 .bg-timetable {
     /* 이미지 배경 스타일 유지 */
     background-color: black;
-    background-image: url('/images/timetable.png');
+    background-image: url('/images/timetable.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
