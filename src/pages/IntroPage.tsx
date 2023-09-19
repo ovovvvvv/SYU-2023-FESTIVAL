@@ -7,7 +7,7 @@ const IntroPage = () => {
       <div
         style={{
           backgroundColor: 'black',
-          backgroundImage: 'url(/images/title.webp)',
+          backgroundImage: 'url(/images/title4.webp)',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
