@@ -10,13 +10,3 @@ const OutlinePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
 });
 
 export default OutlinePage;
-
-// style={{
-//   backgroundColor: 'black',
-//   backgroundImage: 'url(/images/outline.webp)',
-//   backgroundSize: 'cover',
-//   backgroundRepeat: 'no-repeat',
-//   backgroundPosition: 'center',
-//   position: 'relative',
-//   zIndex: -1,
-// }}

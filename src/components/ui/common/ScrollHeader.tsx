@@ -45,7 +45,7 @@ const ScrollHeader = ({
         <div
           style={{ fontFamily: 'Pretendard-medium' }}
           key={index}
-          className={` border-solid border-[1px] border-[#5A5A5A] text-[11px] p-2 cursor-pointer sticky top-0 ${
+          className={` border-solid border-[0.3px] border-[#5A5A5A] text-[11px] p-1 cursor-pointer sticky top-0 ${
             activeMenuIndex === index
               ? 'bg-[#000000] text-[#ffffff]'
               : 'bg-[#E7E7E7] text-black'
