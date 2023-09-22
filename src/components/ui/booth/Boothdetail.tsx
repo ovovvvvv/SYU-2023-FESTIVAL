@@ -10,7 +10,7 @@ const BoothBox = () => {
   };
 
   return (
-    <div className="flex flex-col items-center pb-20">
+    <div className="relative flex flex-col items-center pb-20">
       <h1
         className="text-[23px] text-white underline underline-offset-8 mb-6"
         style={{ fontFamily: 'Montserrat, sans-serif' }}
@@ -126,14 +126,14 @@ const BoothBox = () => {
 
       {/* 팝업 모달 */}
       {isPopupOpen && (
-        <div>
-          <img
-            src="/images/popup.webp"
-            alt="팝업 이미지"
-            width={300}
-            className="relative"
-          />
-          <AiOutlineClose />
+        <div className="absolute top-1/2   ">
+          <img src="/images/popup.webp" alt="팝업 이미지" width={300} />
+          <div
+            className="absolute top-0 right-0 mx-2 my-2"
+            onClick={handlePopup}
+          >
+            <AiOutlineClose />
+          </div>
         </div>
       )}
     </div>
