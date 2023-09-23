@@ -44,7 +44,7 @@ const AboutPage = () => {
           </Link>
         }
         logo={
-          <img src="/images/logo.webp" width={100} alt="멋쟁이사자처럼 로고" />
+          <img src="/images/logo.webp" width={90} alt="멋쟁이사자처럼 로고" />
         }
         positionLogoLeft={true}
       />
@@ -65,7 +65,7 @@ const AboutPage = () => {
             총학생회 '열림' 인스타그램
           </Link>
         }
-        logo={<img src="images/logo2.webp" width={100} alt="총학생회 로고" />}
+        logo={<img src="images/logo2.webp" width={90} alt="총학생회 로고" />}
         positionLogoLeft={false}
       />
     </div>

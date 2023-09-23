@@ -13,15 +13,15 @@ const About = ({ title, desc, link, logo, positionLogoLeft }: AboutProps) => {
   return (
     <div className="my-4">
       <div
-        className={`flex flex-row space-x-5 items-center ${
+        className={`flex flex-row space-x-4 items-center ${
           positionLogoLeft ? '' : 'flex-row-reverse'
         }`}
       >
         <div className="mx-4">{logo}</div>
         <div className="flex flex-col ">
           <div
-            className="text-[17px] underline underline-offset-8 my-4"
-            style={{ fontFamily: 'Pretdendard-Semibold' }}
+            className="text-[17px] underline underline-offset-8 my-4 whitespace-nowrap"
+            style={{ fontFamily: 'Pretendard-Semibold' }}
           >
             {title}
           </div>
