@@ -50,17 +50,13 @@
 
 body {
   background: black;
+  -ms-overflow-style: none;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 
 h1 {
   font-family: 'Bruno Ace SC', cursive;
-}
-
-/* props로 데이터 전달시 줄 넘기기 */
-.description {
-  white-space: pre-line;
 }

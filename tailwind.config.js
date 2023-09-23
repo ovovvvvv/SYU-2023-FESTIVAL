@@ -21,5 +21,5 @@ export default {
       slider: "slider 16s linear infinite",
     },
   },
-  plugins: [],
+  plugins: ["tailwind-scrollbar-hide"],
 };

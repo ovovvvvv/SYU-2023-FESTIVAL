@@ -6,9 +6,9 @@ interface TimeTableBoxProps {
 const TimeTableBox = ({ time, activity }: TimeTableBoxProps) => {
   return (
     <div>
-      <div className="flex flex-row justify-start items-center text-[13px]">
+      <div className="flex flex-row text-start items-center text-[13px]">
         <p
-          className="mx-5"
+          className="mx-5 w-1/2"
           style={{
             fontFamily: 'Pretendard-Semibold',
           }}
@@ -16,7 +16,7 @@ const TimeTableBox = ({ time, activity }: TimeTableBoxProps) => {
           {time}
         </p>
         <p
-          className="mx-5"
+          className="mx-5 w-2/3"
           style={{
             fontFamily: 'Pretendard-Semibold',
           }}
