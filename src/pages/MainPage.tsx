@@ -38,8 +38,8 @@ const MainPage = () => {
         <BoothPage ref={boothRef} />
         <VideoPage ref={videoRef} />
         <AboutPage ref={aboutRef} />
+        <FooterAnimation />
       </div>
-      {window.location.pathname !== '/about' && <FooterAnimation />}
     </div>
   );
 };
