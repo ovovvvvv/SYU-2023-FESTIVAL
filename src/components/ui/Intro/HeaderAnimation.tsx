@@ -1,4 +1,4 @@
-import './TextAnimation.css';
+
 
 const HeaderAnimation = () => {
   return (

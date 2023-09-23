@@ -1,9 +1,12 @@
 import About from '../components/ui/about/About';
 import { Link } from 'react-router-dom';
+import AboutFooter from '../components/ui/about/AboutFooter';
+import { forwardRef, ForwardedRef } from 'react';
 
-const AboutPage = () => {
+const AboutPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <div
+      ref={ref}
       className="flex flex-col text-center items-center text-[#fff] py-20"
       style={{ fontFamily: 'Pretendard-Semibold' }}
     >
@@ -68,8 +71,9 @@ const AboutPage = () => {
         logo={<img src="images/logo2.webp" width={90} alt="총학생회 로고" />}
         positionLogoLeft={false}
       />
+      <AboutFooter />
     </div>
   );
-};
+});
 
 export default AboutPage;

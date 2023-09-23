@@ -52,6 +52,10 @@ body {
   background: black;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 h1 {
   font-family: 'Bruno Ace SC', cursive;
 }

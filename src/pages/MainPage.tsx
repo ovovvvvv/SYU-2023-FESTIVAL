@@ -9,12 +9,15 @@ import SponPage from './SponPage';
 import BoothPage from './BoothPage';
 import VideoPage from './VideoPage';
 import AboutPage from './AboutPage';
+import FooterAnimation from '../components/ui/common/FooterAnimation';
 
 const MainPage = () => {
   const outlineRef = useRef<HTMLDivElement | null>(null);
   const timetableRef = useRef<HTMLDivElement | null>(null);
   const sponserRef = useRef<HTMLDivElement | null>(null);
   const boothRef = useRef<HTMLDivElement | null>(null);
+  const videoRef = useRef<HTMLDivElement | null>(null);
+  const aboutRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <div>
@@ -24,6 +27,8 @@ const MainPage = () => {
         timetableRef={timetableRef}
         sponserRef={sponserRef}
         boothRef={boothRef}
+        videoRef={videoRef}
+        aboutRef={aboutRef}
       />
       <div className="bg-gradient">
         <OutlinePage ref={outlineRef} />
@@ -31,9 +36,10 @@ const MainPage = () => {
         <LineupPage />
         <SponPage ref={sponserRef} />
         <BoothPage ref={boothRef} />
-        <VideoPage />
-        <AboutPage />
+        <VideoPage ref={videoRef} />
+        <AboutPage ref={aboutRef} />
       </div>
+      {window.location.pathname !== '/about' && <FooterAnimation />}
     </div>
   );
 };

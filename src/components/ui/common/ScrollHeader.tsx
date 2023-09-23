@@ -5,6 +5,8 @@ interface ScrollHeaderProps {
   timetableRef: RefObject<HTMLDivElement | null>;
   sponserRef: RefObject<HTMLDivElement | null>;
   boothRef: RefObject<HTMLDivElement | null>;
+  videoRef: RefObject<HTMLDivElement | null>;
+  aboutRef: RefObject<HTMLDivElement | null>;
 }
 
 const ScrollHeader = ({
@@ -12,6 +14,8 @@ const ScrollHeader = ({
   timetableRef,
   sponserRef,
   boothRef,
+  videoRef,
+  aboutRef,
 }: ScrollHeaderProps) => {
   const [activeMenuIndex, setActiveMenuIndex] = useState<number | null>(null);
 
@@ -27,8 +31,8 @@ const ScrollHeader = ({
     { label: 'TIME TABLE/출연진', ref: timetableRef },
     { label: '협업/협찬', ref: sponserRef },
     { label: '부스/SPECIAL ZONE', ref: boothRef },
-    { label: '축전 영상' },
-    { label: 'About' },
+    { label: '축전 영상', ref: videoRef },
+    { label: 'About', ref: aboutRef },
   ];
 
   const handleChangeMenuColor = (

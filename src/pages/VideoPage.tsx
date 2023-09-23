@@ -1,6 +1,8 @@
-const VideoPage = () => {
+import { forwardRef, ForwardedRef } from 'react';
+
+const VideoPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div className="flex flex-col items-center text-[#fff] py-20">
+    <div ref={ref} className="flex flex-col items-center text-[#fff] py-[70%]">
       <h1
         className="text-[25px] underline underline-offset-8 mb-6"
         style={{ fontFamily: 'Pretendard-semibold' }}
@@ -10,6 +12,6 @@ const VideoPage = () => {
       <div className="">축전영상이 들어갑니다 ㅎㅎ</div>
     </div>
   );
-};
+});
 
 export default VideoPage;

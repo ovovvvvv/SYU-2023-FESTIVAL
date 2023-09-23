@@ -3,7 +3,7 @@ import { forwardRef, ForwardedRef } from 'react';
 
 const BoothPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div ref={ref}>
+    <div ref={ref} className="py-[20%]">
       <BoothDetail />
     </div>
   );

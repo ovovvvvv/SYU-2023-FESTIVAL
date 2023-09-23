@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import MainPage from './pages/MainPage';
+
 import FooterAnimation from './components/ui/common/FooterAnimation';
 
 function App() {
@@ -8,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
       </Routes>
-
       <FooterAnimation />
     </div>
   );
