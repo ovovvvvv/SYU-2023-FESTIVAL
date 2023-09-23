@@ -6,10 +6,10 @@ const FooterAnimation = () => {
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 w-full
+      className="fixed bottom-0 left-0 right-0 w-[500px]
       h-[18px] bg-[#404040] text-white text-xs text-center
-      flex justify-center items-center overflow-clip
-      z-[1]"
+      mx-auto overflow-clip
+       z-[1]"
     >
       <div className="animate-slider flex flex-row space-x-6 whitespace-nowrap">
         {repeatSponsors.map((sponsor, index) => (

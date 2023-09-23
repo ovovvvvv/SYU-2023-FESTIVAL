@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+// 파이어폭스 스크롤바
+* {
+  scrollbar-width: none;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@600&display=swap');
@@ -50,11 +62,6 @@
 
 body {
   background: black;
-  -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 h1 {
