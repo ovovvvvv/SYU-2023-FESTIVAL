@@ -1,4 +1,5 @@
-import AboutMe from "../components/ui/about/AboutMe";
+import About from '../components/ui/about/About';
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   return (
@@ -11,7 +12,6 @@ const AboutPage = () => {
         멋쟁이사자처럼 삼육대학교 <br />X <br /> 삼육대학교 제63대 총학생회
         '열림'
       </p>
-
       <div
         className="flex flex-col justify-center py-8  text-[#fff] text-[12px] leading-5 border-[1px] border-[#eeeeee] w-[300px] my-4 backdrop-blur-[2px] bg-white/10 whitespace-nowrap"
         style={{
@@ -28,7 +28,46 @@ const AboutPage = () => {
         2023 천보축전 페이지와 함께 축제를 즐겁게 즐기시고 <br />
         소중한 청춘의 추억을 만드시길 바랍니다. 감사합니다.
       </div>
-      <AboutMe title="멋쟁이사자처럼 삼육대학교 11기" desc="멋쟁이사자처럼 삼육대학교는 \n 테크 기반의 아이디어 실현을 위한 \n 전국 최대 규모의 대학연합 IT 동아리이자 \n 삼육대학교 중앙 동아리입니다." link="" logo="images/logo.webp" />
+      <About
+        title="멋쟁이사자처럼 삼육대학교 11기"
+        desc={
+          <>
+            멋쟁이사자처럼 삼육대학교는 <br />
+            테크 기반의 아이디어 실현을 위한 <br />
+            전국 최대 규모의 대학연합 IT 동아리이자 <br />
+            삼육대학교 중앙 동아리입니다.
+          </>
+        }
+        link={
+          <Link to="https://syulion11th.github.io/likelionpage-front/">
+            삼육멋사 11기 홈페이지
+          </Link>
+        }
+        logo={
+          <img src="/images/logo.webp" width={100} alt="멋쟁이사자처럼 로고" />
+        }
+        positionLogoLeft={true}
+      />
+      <About
+        title="삼육대학교 제63대 총학생회 '열림'"
+        desc={
+          <>
+            안녕하세요, 삼육대학교 제63대 열림 <br />
+            총학생회입니다. 저희 슬로건인 <br />
+            &lt;열림, 변화의 문을 열다&gt; 와 같이
+            <br />
+            학생 복지와 학생 권리를 위해서 <br />
+            최선을 다하는 총학생회가 되겠습니다. 감사합니다!
+          </>
+        }
+        link={
+          <Link to="https://www.instagram.com/syu_63_open/">
+            총학생회 '열림' 인스타그램
+          </Link>
+        }
+        logo={<img src="images/logo2.webp" width={100} alt="총학생회 로고" />}
+        positionLogoLeft={false}
+      />
     </div>
   );
 };

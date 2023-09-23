@@ -77,7 +77,7 @@ const OutlinedDetail = () => {
             </p>
             <br />
             <p
-              className="text-[2px]"
+              className="text-[8px]"
               style={{ fontFamily: 'Pretendard-Regular' }}
             >
               * 2022년 기준 천보축전 참여 재학생 약5000명, 2023년은

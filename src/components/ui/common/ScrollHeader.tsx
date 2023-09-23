@@ -40,7 +40,7 @@ const ScrollHeader = ({
   };
 
   return (
-    <div className="sticky top-0 text-center grid grid-cols-3 sm:grid-cols-6 w-full">
+    <div className="z-[1] sticky top-0 text-center grid grid-cols-3 sm:grid-cols-6 w-full">
       {menuItems.map((menuItem, index) => (
         <div
           style={{ fontFamily: 'Pretendard-medium' }}
