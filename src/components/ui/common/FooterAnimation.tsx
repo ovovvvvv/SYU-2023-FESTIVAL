@@ -11,7 +11,7 @@ const FooterAnimation = () => {
       mx-auto overflow-clip
        z-[1]"
     >
-      <div className="animate-slider flex flex-row space-x-6 whitespace-nowrap">
+      <div className="animate-slider flex flex-row text-[10px] space-x-6 whitespace-nowrap">
         {repeatSponsors.map((sponsor, index) => (
           <p key={index}>{sponsor}</p>
         ))}

@@ -10,13 +10,13 @@ const AboutPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
       className="flex flex-col text-center items-center text-[#fff] py-20"
       style={{ fontFamily: 'Pretendard-Semibold' }}
     >
-      <p className="text-[18px]">
+      <p className="text-[18px] mb-3">
         LIKELION AT SYU <br />
         멋쟁이사자처럼 삼육대학교 <br />X <br /> 삼육대학교 제63대 총학생회
         '열림'
       </p>
       <div
-        className="flex flex-col justify-center py-8  text-[#fff] text-[12px] leading-5 border-[1px] border-[#eeeeee] w-[300px] my-4 backdrop-blur-[2px] bg-white/10 whitespace-nowrap"
+        className="flex flex-col justify-center py-8  text-[#fff] text-[12px] leading-5 border-[1px] border-[#eeeeee] px-4 my-4 backdrop-blur-[2px] bg-white/10 whitespace-nowrap"
         style={{
           borderRadius: '9px',
           fontFamily: 'Pretendard-Medium',
