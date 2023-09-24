@@ -30,7 +30,7 @@ const BoothBox = () => {
       >
         N개의 교외 부스와 N개의 교내 부스가 함께합니다.
       </p>
-      <div className="flex flex-col justify-center items-center py-7 mb-10">
+      <div className="flex flex-col justify-center items-center py-7 mb-20">
         <div
           className="flex flex-col py-10 text-[#fff] text-start text-[15px] border-[0.6px] border-[#eeeeee] w-[300px] backdrop-blur-[75px] bg-gradient-to-br from-[#373737] via-transparent to-[#060606] whitespace-nowrap"
           style={{
