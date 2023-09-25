@@ -6,8 +6,8 @@ const FooterAnimation = () => {
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 w-[500px]
-      h-[18px] bg-[#404040] text-white text-xs text-center
+      className="fixed flex items-center bottom-0 left-0 right-0 w-[500px]
+      h-[18px] bg-[#404040] text-white
       mx-auto overflow-clip
        z-[1]"
     >

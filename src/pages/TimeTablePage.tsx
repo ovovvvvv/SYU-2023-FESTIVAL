@@ -3,7 +3,7 @@ import TimeTableBox from '../components/ui/timeline/TimeTableBox';
 
 const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div ref={ref} className=" flex flex-col justify-center text-center pt-10">
+    <div ref={ref} className=" flex flex-col justify-center text-center">
       <div className="flex flex-col justify-center items-center ">
         <div
           className="flex flex-col justify-center text-[#fff] text-[25px] border-[1px] py-1 border-[#eeeeee] w-[200px] my-10 backdrop-blur-[2px] bg-white/10"

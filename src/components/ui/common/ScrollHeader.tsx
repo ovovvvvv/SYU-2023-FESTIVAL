@@ -1,12 +1,12 @@
-import { useState, RefObject } from 'react';
+import { useState, useEffect } from 'react';
 
 interface ScrollHeaderProps {
-  outlineRef: RefObject<HTMLDivElement | null>;
-  timetableRef: RefObject<HTMLDivElement | null>;
-  sponserRef: RefObject<HTMLDivElement | null>;
-  boothRef: RefObject<HTMLDivElement | null>;
-  videoRef: RefObject<HTMLDivElement | null>;
-  aboutRef: RefObject<HTMLDivElement | null>;
+  outlineRef: React.RefObject<HTMLDivElement | null>;
+  timetableRef: React.RefObject<HTMLDivElement | null>;
+  sponserRef: React.RefObject<HTMLDivElement | null>;
+  boothRef: React.RefObject<HTMLDivElement | null>;
+  videoRef: React.RefObject<HTMLDivElement | null>;
+  aboutRef: React.RefObject<HTMLDivElement | null>;
 }
 
 const ScrollHeader = ({
@@ -18,12 +18,60 @@ const ScrollHeader = ({
   aboutRef,
 }: ScrollHeaderProps) => {
   const [activeMenuIndex, setActiveMenuIndex] = useState<number | null>(null);
+  const [scrollingFromMenu, setScrollingFromMenu] = useState(false);
 
-  const handleMoveTo = (ref: RefObject<HTMLDivElement | null>) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!scrollingFromMenu) {
+        const refs = [
+          outlineRef,
+          timetableRef,
+          sponserRef,
+          boothRef,
+          videoRef,
+          aboutRef,
+        ];
+
+        // 각 섹션의 위치를 파악하고 활성 메뉴를 업데이트합니다.
+        for (let i = 0; i < refs.length; i++) {
+          const ref = refs[i];
+          if (ref.current) {
+            const rect = ref.current.getBoundingClientRect();
+            if (rect.top <= 0 && rect.bottom >= 0) {
+              setActiveMenuIndex(i);
+              break; // 첫 번째로 보이는 섹션을 활성화하고 나머지는 검사하지 않습니다.
+            }
+          }
+        }
+      }
+    };
+
+    // 스크롤 이벤트를 추가합니다.
+    window.addEventListener('scroll', handleScroll);
+
+    // 컴포넌트가 언마운트될 때 이벤트 리스너를 제거합니다.
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [
+    outlineRef,
+    timetableRef,
+    sponserRef,
+    boothRef,
+    videoRef,
+    aboutRef,
+    scrollingFromMenu,
+  ]);
+
+  const handleMoveTo = (ref: React.RefObject<HTMLDivElement | null>) => {
+    setScrollingFromMenu(true);
     ref.current?.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
+    setTimeout(() => {
+      setScrollingFromMenu(false);
+    }, 1000); // 스크롤 버튼으로 이동하면 스크롤 이벤트는 1초 후에
   };
 
   const menuItems = [
@@ -37,9 +85,9 @@ const ScrollHeader = ({
 
   const handleChangeMenuColor = (
     index: number,
-    ref: RefObject<HTMLDivElement | null>,
+    ref: React.RefObject<HTMLDivElement | null>,
   ) => {
-    setActiveMenuIndex(index); // 클릭한 메뉴의 인덱스를 활성화 상태로 설정!!
+    setActiveMenuIndex(index);
     handleMoveTo(ref);
   };
 
@@ -49,10 +97,10 @@ const ScrollHeader = ({
         <div
           style={{ fontFamily: 'Pretendard-medium' }}
           key={index}
-          className={` border-solid border-[0.3px] border-[#5A5A5A] text-[11px] p-[8px] cursor-pointer sticky top-0 ${
+          className={`border-solid border-[0.3px] border-[#5A5A5A] text-[11px] p-[8px] cursor-pointer sticky top-0 ${
             activeMenuIndex === index
               ? 'bg-[#000000] text-[#ffffff]'
-              : 'bg-[#E7E7E7] text-black'
+              : 'bg-[#E7E7E7] text-[#000000]'
           }`}
           onClick={() => handleChangeMenuColor(index, menuItem.ref!)}
         >

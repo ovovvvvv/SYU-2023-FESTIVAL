@@ -2,8 +2,8 @@ import { forwardRef, ForwardedRef } from 'react';
 
 const SponPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div ref={ref} className="flex flex-col my-20">
-      <div className="flex flex-col items-center pt-[30%] pb-[30%]">
+    <div ref={ref} className="flex flex-col py-[30%]  my-20">
+      <div className="flex flex-col items-center">
         <h1
           className="text-[23px] text-white underline underline-offset-8 mb-10"
           style={{ fontFamily: 'Montserrat, sans-serif' }}
