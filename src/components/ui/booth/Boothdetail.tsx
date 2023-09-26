@@ -28,7 +28,7 @@ const BoothBox = () => {
         className="text-[#fff] text-[12px]"
         style={{ fontFamily: 'Pretendard-bold' }}
       >
-        N개의 교외 부스와 N개의 교내 부스가 함께합니다.
+        24개의 교외 부스와 교내 부스가 함께합니다.
       </p>
       <div className="flex flex-col justify-center items-center py-7 mb-20">
         <div

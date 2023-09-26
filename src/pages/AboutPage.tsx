@@ -71,6 +71,9 @@ const AboutPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
         logo={<img src="images/logo2.webp" width={90} alt="총학생회 로고" />}
         positionLogoLeft={false}
       />
+      <a href="https://hits.seeyoufarm.com">
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fsyu-2023-festival.vercel.app&count_bg=%231759FB&title_bg=%23CDCDCD&icon=&icon_color=%23E7E7E7&title=Count&edge_flat=false" />
+      </a>
       <AboutFooter />
     </div>
   );
