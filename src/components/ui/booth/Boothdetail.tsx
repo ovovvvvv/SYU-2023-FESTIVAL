@@ -83,13 +83,13 @@ const BoothBox = () => {
 
       <div className="flex flex-col items-center text-[#fff] my-4 text-center ">
         <p
-          className="flex flex-col justify-center py-1 text-[#fff] text-[15px] border-[1px] border-[#eeeeee] w-[300px] backdrop-blur-[2px] bg-white/10 whitespace-nowrap"
+          className="flex flex-col justify-center py-1 text-[#fff] text-[15px] border-[1px] border-[#eeeeee] w-[350px] backdrop-blur-[2px] bg-white/10 whitespace-nowrap"
           style={{
             borderRadius: '34.5px',
             fontFamily: 'Montserrat, sans-serif',
           }}
         >
-          BUSKING ZONE & PICNIC ZONE
+          BUSKING & PICNIC & ATTRACTION ZONE
         </p>
 
         <img src="/images/map3.webp" width={250} className="my-4" />
@@ -109,9 +109,7 @@ const BoothBox = () => {
         </p>
 
         <img src="images/map4.webp" width={250} className=" my-4" />
-        <p className="text-[13px]">
-          취식존은 삼육대학교 다니엘관 앞 광장에 위치해있습니다.
-        </p>
+        <p className="text-[13px]">취식존은 다니엘관 앞 광장입니다.</p>
       </div>
 
       <div

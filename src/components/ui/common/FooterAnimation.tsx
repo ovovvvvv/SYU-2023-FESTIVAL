@@ -18,7 +18,7 @@ const FooterAnimation = () => {
   ];
 
   // 스폰서 배열을 30번 반복합니다.
-  const repeatSponsors = Array(30).fill(sponsors).flat();
+  const repeatSponsors = Array(28).fill(sponsors).flat();
 
   return (
     <div

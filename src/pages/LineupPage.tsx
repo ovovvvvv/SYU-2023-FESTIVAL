@@ -4,7 +4,7 @@ const LineupPage = () => {
       <h1
         className="text-[#fff] text-[27px] flex justify-center text-center mt-10 mb-4"
         style={{
-          fontFamily: 'Pretendard-Semibold',
+          fontFamily: 'Montserrat, sans-serif',
         }}
       >
         AGAIN,YOUTH! <br />
@@ -15,7 +15,7 @@ const LineupPage = () => {
         <h1
           className="absolute bottom-[17.5%] text-black text-[23px] flex justify-center text-center mt-10 mb-4"
           style={{
-            fontFamily: 'Pretendard-Semibold',
+            fontFamily: 'Montserrat, sans-serif',
           }}
         >
           LOCATION

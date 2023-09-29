@@ -1,6 +1,8 @@
+import { ReactNode } from 'react';
+
 interface TimeTableBoxProps {
   time: string;
-  activity: string;
+  activity: ReactNode;
 }
 
 const TimeTableBox = ({ time, activity }: TimeTableBoxProps) => {

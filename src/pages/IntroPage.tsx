@@ -1,7 +1,6 @@
 import HeaderAnimation from '../components/ui/Intro/HeaderAnimation';
 import FlowerAnimation from '../components/ui/Intro/FlowerAnimation';
 
-
 const IntroPage = () => {
   return (
     <div>
