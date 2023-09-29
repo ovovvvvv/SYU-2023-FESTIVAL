@@ -58,22 +58,24 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
             <TimeTableBox time="19:45 - 20:00" activity="레크레이션 2" />
             <TimeTableBox
               time="20:00 - 20:30"
-              activity={<div className="text-[#8F00FF]">MAD CLOWN</div>}
+              activity={<div className="text-[#7000ff]">MAD CLOWN</div>}
             />
             <TimeTableBox
               time="20:30 - 21:00"
-              activity={<div className="text-[#8f00ff]">Car, the garden</div>}
+              activity={<div className="text-[#7000ff]">Car, the garden</div>}
             />
             <TimeTableBox
               time="21:00 - 21:30"
-              activity={<div className="text-[#8f00ff]">FROMIS_9</div>}
+              activity={<div className="text-[#7000ff]">FROMIS_9</div>}
             />
             <TimeTableBox
               time="21:30 - 21:55"
               activity={
                 <div>
-                  <p className="text-[#8f00ff]"> DJ Venic </p>
-                  EDM 공연 및 퇴장 안내
+                  <p>
+                    <span className="text-[#7000ff]">DJ Venic</span> EDM 공연
+                    퇴장 안내
+                  </p>
                 </div>
               }
             />
