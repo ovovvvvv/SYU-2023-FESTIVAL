@@ -32,7 +32,7 @@ const BoothBox = () => {
       </p>
       <div className="flex flex-col justify-center items-center py-7 mb-20">
         <div
-          className="flex flex-col py-10 text-[#fff] text-start text-[15px] border-[1px] border-[#eeeeee] w-[300px] backdrop-blur-[75px] bg-gradient-to-br from-[#373737] via-transparent to-[#060606] whitespace-nowrap"
+          className="flex flex-col py-10 text-[#fff] text-start text-[15px] border-[1px] border-[#eeeeee] w-[320px] backdrop-blur-[75px] bg-gradient-to-br from-[#373737] via-transparent to-[#060606] whitespace-nowrap"
           style={{
             borderRadius: '9px',
           }}
@@ -42,32 +42,31 @@ const BoothBox = () => {
             style={{ fontFamily: 'Pretendard-semibold' }}
           >
             <div className="flex flex-col flex-grow space-y-2">
-              <p>푸드트럭 8개 : 더리얼키친</p>
+              <p>푸드트럭 9개 : 더리얼키친</p>
               <p>노원 문화살롱5120</p>
               <p>노원 청년공유센터 청년공감</p>
+              <p>노원구 청년일자리센터 청년내일</p>
+              <p>서울 청년센터 노원 오랑</p>
               <p>노원문화재단</p>
               <p>대한민국 해군</p>
-              <p>안마을 상인회 1~4</p>
               <p>공릉 도깨비 시장</p>
               <p>샌드밀리</p>
               <p>이찌</p>
               <p>시원스쿨</p>
               <p>밝은눈안과</p>
-              <p>우리은행</p>
             </div>
             <div className="flex flex-col flex-grow space-y-2">
               <p>일자리본부 이벤트부스</p>
               <p>일자리본부 직무부스</p>
               <p>일자리본부 홍보부스</p>
               <p>동아리 연합회 부스</p>
-              <p>동물생명자원학과 부스</p>
+              <p>사랑이흐르는 콩(닥)콩(닥)다방</p>
               <p>서울 동행</p>
               <p>나브르 스튜디오</p>
               <p>보건관리학과 학회</p>
-              <p>신학과</p>
               <p>상담심리학과 동아리 '또치'</p>
               <p>포토에이스</p>
-              <p>삼육핸드</p>
+              <p>삼육랜드</p>
             </div>
           </div>
         </div>
