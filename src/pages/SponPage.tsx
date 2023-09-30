@@ -17,9 +17,6 @@ const sponsorItem = [
   { imgSrc: '/images/sponlogo/sponsor10.webp', title: '밝은눈안과' },
   { imgSrc: '/images/sponlogo/sponsor11.webp', title: '시원스쿨' },
   { imgSrc: '/images/sponlogo/sponsor12.webp', title: 'eazzy(이찌)' },
-];
-
-const syuItem = [
   { imgSrc: '/images/sponlogo/syu1.webp', title: '삼육대학교 일자리본부' },
   { imgSrc: '/images/sponlogo/syu2.webp', title: '동아리연합회 다원' },
   { imgSrc: '/images/sponlogo/syu3.webp', title: '제63대 열림 총학생회' },
@@ -38,15 +35,6 @@ const SponPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
       </div>
       <div className="grid grid-cols-3 mx-3">
         {sponsorItem.map((item, index) => (
-          <Sponsor
-            key={index}
-            sponImg={<img src={item.imgSrc} width={110} />}
-            sponTitle={item.title}
-          />
-        ))}
-      </div>
-      <div className="grid grid-cols-3 my-10 mx-3">
-        {syuItem.map((item, index) => (
           <Sponsor
             key={index}
             sponImg={<img src={item.imgSrc} width={110} />}
