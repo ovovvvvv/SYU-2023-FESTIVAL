@@ -19,9 +19,10 @@ const OutlinedDetail = () => {
               className="text-[10px]"
               style={{ fontFamily: 'Pretendard-medium' }}
             >
-              비대면에서 대면으로 넘어가는 대학문화 도약의 시기에
+              비대면에서 대면으로 넘어가는 대학 문화 도약의 시기에
               <br />
-              <strong>학생 주도참여형 축제</strong>를 진행. 대학문화 창달 <br />
+              <strong>학생 주도 참여형 축제</strong>를 진행, 대학문화 창달{' '}
+              <br />
               <br />
               기존의 보수적인 축제의 형상을 탈피하고
               <br />
@@ -30,7 +31,7 @@ const OutlinedDetail = () => {
               학업에 지친 학생들을 응원하는 축제의 장 마련
               <br />
               <br />
-              <strong>다음 세대의 주역인 삼육대학 청년들</strong>에게 취.창업에
+              <strong>다음세대의 주역인 삼육대학 청년들</strong>에게 취·창업에
               대한
               <br />
               다양한 체험활동과 정보를 제공하여 미래를 향해 도전하는 기회 창출

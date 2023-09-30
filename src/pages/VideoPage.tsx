@@ -2,7 +2,10 @@ import { forwardRef, ForwardedRef } from 'react';
 
 const VideoPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div ref={ref} className="flex flex-col items-center text-[#fff] py-[70%]">
+    <div
+      ref={ref}
+      className="flex flex-col items-center text-[#fff] pt-[40%] pb-[70%]"
+    >
       <h1
         className="text-[25px] underline underline-offset-8 mb-16"
         style={{ fontFamily: 'Pretendard-semibold' }}

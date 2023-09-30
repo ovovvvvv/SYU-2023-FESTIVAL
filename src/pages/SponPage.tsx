@@ -16,6 +16,7 @@ const sponsorItem = [
   { imgSrc: '/images/sponlogo/sponsor9.webp', title: '포토에이스' },
   { imgSrc: '/images/sponlogo/sponsor10.webp', title: '밝은눈안과' },
   { imgSrc: '/images/sponlogo/sponsor11.webp', title: '시원스쿨' },
+  { imgSrc: '/images/sponlogo/sponsor12.webp', title: 'eazzy(이찌)' },
 ];
 
 const syuItem = [
