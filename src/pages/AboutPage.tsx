@@ -28,7 +28,7 @@ const AboutPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
         2023 천보축전 페이지를 개발하였습니다.
         <br />
         <br />
-        2023 천보축전 페이지와 함께 축제를 즐겁게 즐기시고 <br />
+        2023 천보축전 페이지와 함께 축제를 즐기시고 <br />
         소중한 청춘의 추억을 만드시길 바랍니다. 감사합니다.
       </div>
       <About

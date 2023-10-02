@@ -94,7 +94,7 @@ const BoothBox = () => {
 
         <img src="/images/map3.webp" width={250} className="my-4" />
         <p className="text-[13px]">
-          버스킹존과 피크닉존은 에스라관 옆 잔디밭입니다.
+          버스킹존, 피크닉존, 어트랙션존은 에스라관 옆 잔디밭입니다.
         </p>
       </div>
       <div className="flex flex-col items-center text-[#fff] my-4 text-center">
