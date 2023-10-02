@@ -24,7 +24,7 @@ const AboutPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
       >
         안녕하세요! 삼육대학교 학우 여러분.
         <br /> 학우분들께서 더욱 즐겁게 2023 천보축전을 즐기실 수 있도록 <br />
-        학생회와 멋쟁이사자처럼 삼육대학교가 협업해 <br />
+        삼육대학교 총학생회 '열림'과 멋쟁이사자처럼 삼육대학교가 협업해 <br />
         2023 천보축전 페이지를 개발하였습니다.
         <br />
         <br />
@@ -57,7 +57,7 @@ const AboutPage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
           <>
             안녕하세요, 삼육대학교 제63대 열림 <br />
             총학생회입니다. 저희 슬로건인 <br />
-            &lt;열림, 변화의 문을 열다&gt; 와 같이
+            &lt;변화를 위한 문을 열다, 열림&gt; 과 같이
             <br />
             학생 복지와 학생 권리를 위해서 <br />
             최선을 다하는 총학생회가 되겠습니다. 감사합니다!

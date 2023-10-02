@@ -77,7 +77,8 @@ const OutlinedDetail = () => {
               삼육대학교 학생들의 화합과 문화형성의 장이라는 의미가 있습니다.
             </p>
             <br />
-            <p
+
+            {/* <p
               className="text-[8px]"
               style={{ fontFamily: 'Pretendard-Regular' }}
             >
@@ -85,7 +86,7 @@ const OutlinedDetail = () => {
               <br />
               지역사회와 공존하는 방향으로 진행하기에 그 이상이 될 것으로
               예상함.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -76,10 +76,10 @@ const ScrollHeader = ({
 
   const menuItems = [
     { label: '행사 목표 및 역사', ref: outlineRef },
-    { label: 'TIME TABLE/출연진', ref: timetableRef },
+    { label: 'TIME TABLE/공연안내', ref: timetableRef },
     { label: '협업/협찬', ref: sponserRef },
     { label: '부스/SPECIAL ZONE', ref: boothRef },
-    { label: '공연 입장 안내/축전 영상', ref: videoRef },
+    { label: '축전 영상', ref: videoRef },
     { label: 'About', ref: aboutRef },
   ];
 

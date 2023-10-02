@@ -1,3 +1,6 @@
+import { BsFillPlayFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+
 const LineupPage = () => {
   return (
     <div className="flex flex-col justify-center">
@@ -29,9 +32,24 @@ const LineupPage = () => {
           className="text-[12px] absolute bottom-[3%]"
           style={{ fontFamily: 'Pretendard-Semibold' }}
         >
-          모든 공연은 삼육대학교 대운동장 무대에서 진행됩니다.
+          모든 공연은 삼육대학교 종합경기장에서 진행됩니다.
         </p>
       </div>
+      <Link
+        to="https://www.instagram.com/p/CxszYEnPfli/?igshid=MzRlODBiNWFlZA=="
+        className="flex justify-center"
+      >
+        <p
+          className="flex flex-row py-1 text-center mb-10 items-center justify-center  text-[#fff] text-[15px] border-[1px] border-[#eeeeee] w-[200px] backdrop-blur-[2px] bg-white/10 whitespace-nowrap"
+          style={{
+            borderRadius: '34.5px',
+            fontFamily: 'Pretendard-Semibold',
+          }}
+        >
+          공연 입장 확인 안내
+          <BsFillPlayFill className="ml-1 text-lg" />
+        </p>
+      </Link>
     </div>
   );
 };

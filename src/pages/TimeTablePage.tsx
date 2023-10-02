@@ -1,6 +1,7 @@
 import { forwardRef, ForwardedRef } from 'react';
 import TimeTableBox from '../components/ui/timeline/TimeTableBox';
 
+
 const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <div ref={ref} className=" flex flex-col justify-center text-center">
@@ -51,11 +52,14 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
               fontFamily: 'Pretendard-Semibold',
             }}
           >
-            <TimeTableBox time="16:30 - 17:30" activity="개회식 + 레크레이션" />
-            <TimeTableBox time="17:30 - 19:00" activity="밴드 공연" />
-            <TimeTableBox time="19:00 - 19:15" activity="레크레이션 1" />
-            <TimeTableBox time="19:15 - 19:45" activity="댄스동아리 공연" />
-            <TimeTableBox time="19:45 - 20:00" activity="레크레이션 2" />
+            <TimeTableBox time="15:00 - 16:00" activity="입장 및 안전 안내" />
+            <TimeTableBox time="16:00 - 17:00" activity="밴드 공연" />
+            <TimeTableBox time="17:00 - 17:40" activity="치어 응원전" />
+            <TimeTableBox time="17:40 - 18:40" activity="개회식" />
+            <TimeTableBox time="18:40 - 19:00" activity="레크레이션" />
+            <TimeTableBox time="19:00 - 19:20" activity="클래시아 공연" />
+            <TimeTableBox time="19:20 - 19:40" activity="D.M 공연" />
+            <TimeTableBox time="19:40 - 20:00" activity="PLAGUE 공연" />
             <TimeTableBox
               time="20:00 - 20:30"
               activity={<div className="text-[#7000ff]">MAD CLOWN</div>}
@@ -69,26 +73,19 @@ const TimeTablePage = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
               activity={<div className="text-[#7000ff]">FROMIS_9</div>}
             />
             <TimeTableBox
-              time="21:30 - 21:55"
-              activity={
-                <div>
-                  <p>
-                    <span className="text-[#7000ff]">DJ Venic</span> EDM 공연
-                    퇴장 안내
-                  </p>
-                </div>
-              }
+              time="21:30 - 22:00"
+              activity={<div className="text-[#7000ff]">EDM FESTIVAL</div>}
             />
-            <TimeTableBox time="21:55 - 22:00" activity="마무리" />
             <img src="/images/map2.webp" width={250} className="mx-auto my-2" />
             <p
               className="text-[12px]"
               style={{ fontFamily: 'Pretendard-Semibold' }}
             >
-              행사는 삼육대학교 대운동장에서 진행됩니다.
+              행사는 삼육대학교 종합경기장에서 진행됩니다.
             </p>
           </div>
         </div>
+      
       </div>
     </div>
   );
